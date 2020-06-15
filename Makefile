@@ -4,6 +4,7 @@ all:
 	mint bootstrap
 	carthage update --platform iOS
 	mint run xcodegen generate
+	open chat-iOS.xcodeproj
 
 merge:
 	mint run xcodegen generate
