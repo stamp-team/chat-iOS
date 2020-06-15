@@ -7,4 +7,3 @@ all:
 
 merge:
 	mint run xcodegen generate
-	mint run swiftgen
