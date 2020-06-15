@@ -1,0 +1,88 @@
+name: chat-iOS
+options:
+  developmentLanguage: ja
+  deploymentTarget:
+    iOS: 12.0.0
+configs:
+  Debug: debug
+  AdHoc: release
+  Release: release
+targets:
+  chat-iOS:
+    type: application
+    platform: iOS
+    scheme: {}
+    sources:
+      - path: chat-iOS
+    settings:
+      base:
+        OTHER_LDFLAGS:
+          - $(inherited)
+          - $(OTHER_LDFLAGS)
+          - -ObjC
+      configs:
+        Debug:
+          CODE_SIGN_IDENTITY: iPhone Developer
+          PRODUCT_BUNDLE_IDENTIFIER: com.stamp.chat-ios-dev
+          INFOPLIST_FILE: chat-iOS/Resources/Info/Info.plist
+        AdHoc:
+          CODE_SIGN_IDENTITY: iPhone Distribution
+          PRODUCT_BUNDLE_IDENTIFIER: com.stamp.chat-ios-dev
+          INFOPLIST_FILE: chat-iOS/Resources/Info/Info.plist
+        Release:
+          CODE_SIGN_IDENTITY: iPhone Distribution
+          PRODUCT_BUNDLE_IDENTIFIER: com.stamp.chat-ios
+          INFOPLIST_FILE: chat-iOS/Resources/Info/Info.plist
+    dependencies:
+      - carthage: Nuke
+      - carthage: abseil
+        linkType: static
+      - carthage: BoringSSL-GRPC
+        linkType: static
+      - carthage: FIRAnalyticsConnector
+        linkType: static
+      - carthage: FirebaseAnalytics
+        linkType: static
+      - carthage: FirebaseAuth
+        linkType: static
+      - carthage: FirebaseCore
+        linkType: static
+      - carthage: FirebaseCoreDiagnostics
+        linkType: static
+      - carthage: FirebaseFirestore
+        linkType: static
+      - carthage: FirebaseStorage
+        linkType: static
+      - carthage: FirebaseInstallations
+        linkType: static
+      - carthage: GoogleAppMeasurement
+        linkType: static
+      - carthage: GoogleDataTransport
+        linkType: static
+      - carthage: GoogleDataTransportCCTSupport
+        linkType: static
+      - carthage: GoogleUtilities
+        linkType: static
+      - carthage: gRPC-C++
+        linkType: static
+      - carthage: gRPC-Core
+        linkType: static
+      - carthage: GTMSessionFetcher
+        linkType: static
+      - carthage: leveldb-library
+        linkType: static
+      - carthage: nanopb
+        linkType: static
+      - carthage: PromisesObjC
+        linkType: static
+      - sdk: libsqlite3.tbd
+      - sdk: libz.tbd
+      - sdk: libc++.tbd
+      - sdk: CoreTelephony.framework
+      - sdk: StoreKit.framework
+    preBuildScripts:
+      - path: Scripts/BuildPhases/google-info.sh
+        name: GoogleInfo
+    postCompileScripts:
+      - script: Scripts/BuildPhases/swiftlint.sh
+        name: SwiftLint
