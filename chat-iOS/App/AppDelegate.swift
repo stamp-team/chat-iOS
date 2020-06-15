@@ -12,17 +12,14 @@ import Firebase
 final class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    
-    override init() {
-        FirebaseApp.configure()
-    }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        FirebaseApp.configure()
         if #available(iOS 13, *) {
         } else {
             window = UIWindow(frame: UIScreen.main.bounds)
-            window?.makeKeyAndVisible()
             window?.rootViewController = Routes.decideRootViewController()
+            window?.makeKeyAndVisible()
         }
         return true
     }
