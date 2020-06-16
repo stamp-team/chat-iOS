@@ -31,7 +31,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dTe-Sc-UEj">
-                                <rect key="frame" x="32" y="222" width="350" height="50"/>
+                                <rect key="frame" x="32" y="208" width="350" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Lzk-bK-QU5"/>
                                 </constraints>
@@ -39,13 +39,13 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="パスワード" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o5O-uj-6LK">
-                                <rect key="frame" x="40" y="193" width="87" height="21"/>
+                                <rect key="frame" x="40" y="179" width="87" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yen-6n-ZXz">
-                                <rect key="frame" x="70" y="304" width="274" height="50"/>
+                                <rect key="frame" x="70" y="290" width="274" height="50"/>
                                 <color key="backgroundColor" red="0.41937598590000003" green="0.85834592580000002" blue="0.87452095750000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="bRb-ha-qJT"/>
@@ -66,7 +66,7 @@
                             <constraint firstItem="dTe-Sc-UEj" firstAttribute="top" secondItem="o5O-uj-6LK" secondAttribute="bottom" constant="8" id="0kG-yQ-dbY"/>
                             <constraint firstItem="LVU-Lx-83S" firstAttribute="trailing" secondItem="dTe-Sc-UEj" secondAttribute="trailing" constant="32" id="0w6-Ff-oed"/>
                             <constraint firstItem="dTe-Sc-UEj" firstAttribute="leading" secondItem="LVU-Lx-83S" secondAttribute="leading" constant="32" id="35j-p5-JdT"/>
-                            <constraint firstItem="dTe-Sc-UEj" firstAttribute="top" secondItem="CcZ-Od-rNk" secondAttribute="bottom" constant="64" id="5c2-2N-ZuL"/>
+                            <constraint firstItem="dTe-Sc-UEj" firstAttribute="top" secondItem="CcZ-Od-rNk" secondAttribute="bottom" constant="50" id="5c2-2N-ZuL"/>
                             <constraint firstItem="CcZ-Od-rNk" firstAttribute="top" secondItem="eI4-CD-vsR" secondAttribute="bottom" constant="8" id="94r-h6-o3M"/>
                             <constraint firstItem="yen-6n-ZXz" firstAttribute="leading" secondItem="LVU-Lx-83S" secondAttribute="leading" constant="70" id="Fno-fO-I8a"/>
                             <constraint firstItem="o5O-uj-6LK" firstAttribute="leading" secondItem="CcZ-Od-rNk" secondAttribute="leading" constant="8" id="OBk-xo-n86"/>
