@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="79b-Tc-bIU">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Auth Top View Controller-->
+        <scene sceneID="tPa-lc-LpW">
+            <objects>
+                <viewController id="79b-Tc-bIU" customClass="AuthTopViewController" customModule="chat_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="P3J-nH-nvk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nH2-Ek-TzC">
+                                <rect key="frame" x="32" y="684" width="350" height="50"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="wOG-Ak-QSa"/>
+                                </constraints>
+                                <state key="normal" title="ログイン">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TYT-PT-4ds">
+                                <rect key="frame" x="32" y="602" width="350" height="50"/>
+                                <color key="backgroundColor" red="0.41937598590000003" green="0.85834592580000002" blue="0.87452095750000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="5wv-vc-Szf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="登録">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="LCl-p3-HOx" firstAttribute="trailing" secondItem="nH2-Ek-TzC" secondAttribute="trailing" constant="32" id="5Be-Hf-hc1"/>
+                            <constraint firstItem="TYT-PT-4ds" firstAttribute="leading" secondItem="LCl-p3-HOx" secondAttribute="leading" constant="32" id="YfN-4C-mXF"/>
+                            <constraint firstItem="LCl-p3-HOx" firstAttribute="trailing" secondItem="TYT-PT-4ds" secondAttribute="trailing" constant="32" id="amt-DU-hbT"/>
+                            <constraint firstItem="nH2-Ek-TzC" firstAttribute="leading" secondItem="LCl-p3-HOx" secondAttribute="leading" constant="32" id="j61-kk-eqa"/>
+                            <constraint firstItem="nH2-Ek-TzC" firstAttribute="top" secondItem="TYT-PT-4ds" secondAttribute="bottom" constant="32" id="uGu-qk-aio"/>
+                            <constraint firstItem="LCl-p3-HOx" firstAttribute="bottom" secondItem="nH2-Ek-TzC" secondAttribute="bottom" constant="128" id="wka-iI-lri"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="LCl-p3-HOx"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dYO-Yh-Xnq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="275" y="157"/>
+        </scene>
+    </scenes>
+</document>
