@@ -1,0 +1,8 @@
+excluded:
+  - Carthage/
+  - eventgen-viewer/App/
+disabled_rules:
+  - force_cast
+  - trailing_whitespace
+  - line_length
+  - identifier_name
