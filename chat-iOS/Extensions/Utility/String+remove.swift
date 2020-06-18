@@ -2,7 +2,9 @@
 //  String+remove.swift
 //  chat-iOS
 //
+
 //  Created by Ren Matsushita on 2020/06/15.
+
 //
 
 import Foundation
