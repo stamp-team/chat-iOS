@@ -9,9 +9,12 @@ import UIKit
 
 struct LoginViewBuilder {
     static func create() -> UIViewController {
-        guard let loginViewBuilder = LoginViewController.loadFromStoryboard() as? LoginViewController else {
+        guard let loginViewController = LoginViewController.loadFromStoryboard() as? LoginViewController else {
             fatalError("fatal: Failed to initialize the SampleViewController")
         }
-        return loginViewBuilder
+        let model = LoginViewModel()
+        let presenter = LoginViewPresenter(model: model)
+        loginViewController.inject(with: presenter)
+        return loginViewController
     }
 }
