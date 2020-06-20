@@ -12,7 +12,7 @@ struct SampleViewBuilder {
         guard let sampleViewController = SampleViewController.loadFromStoryboard() as? SampleViewController else {
             fatalError("fatal: Failed to initialize the SampleViewController")
         }
-        let model = SampleViewModel()
+        let model = SampleModel()
         let presenter = SampleViewPresenter(model: model)
         sampleViewController.inject(with: presenter)
         return sampleViewController

@@ -13,11 +13,11 @@ protocol SampleViewPresenterOutput {
     
 }
 
-final class SampleViewPresenter: SampleViewPresenterProtocol, SampleViewModelOutput {
+final class SampleViewPresenter: SampleViewPresenterProtocol, SampleModelOutput {
     var view: SampleViewPresenterOutput!
-    private var model: SampleViewModelProtocol
+    private var model: SampleModelProtocol
     
-    init(model: SampleViewModelProtocol) {
+    init(model: SampleModelProtocol) {
         self.model = model
     }
 }
